@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Jasa Sewa Bus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background: url('https://picsum.photos/1600/600?random=1') center/cover no-repeat;
+      height: 80vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 30px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Pusat Bus Holiday</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#armada">Armada</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="display-4 fw-bold">Sewa Bus Pariwisata & Holiday</h1>
+      <p class="lead">Armada terbaik dengan harga bersahabat, siap menemani perjalanan Anda</p>
+      <a href="#kontak" class="btn btn-warning btn-lg mt-3">Pesan Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section id="layanan" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Layanan Kami</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/200?random=2" class="card-img-top" alt="Wisata">
+            <div class="card-body">
+              <h5 class="card-title">Sewa Bus Wisata</h5>
+              <p class="card-text">Nikmati perjalanan wisata nyaman dan aman dengan armada bus pariwisata kami.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/200?random=3" class="card-img-top" alt="Event">
+            <div class="card-body">
+              <h5 class="card-title">Event & Gathering</h5>
+              <p class="card-text">Layanan transportasi untuk acara kantor, reuni, atau acara spesial lainnya.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/400/200?random=4" class="card-img-top" alt="Umroh">
+            <div class="card-body">
+              <h5 class="card-title">Perjalanan Religi</h5>
+              <p class="card-text">Tersedia armada untuk kegiatan ziarah, umroh, maupun perjalanan keagamaan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Armada -->
+  <section id="armada" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Armada Terbaru</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <img src="https://picsum.photos/400/200?random=5" class="card-img-top" alt="Bus">
+            <div class="card-body">
+              <h5 class="card-title">Big Bus 50 Seat</h5>
+              <p class="card-text">Cocok untuk rombongan besar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <img src="https://picsum.photos/400/200?random=6" class="card-img-top" alt="Bus">
+            <div class="card-body">
+              <h5 class="card-title">Medium Bus 30 Seat</h5>
+              <p class="card-text">Pas untuk grup keluarga dan kantor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <img src="https://picsum.photos/400/200?random=7" class="card-img-top" alt="Bus">
+            <div class="card-body">
+              <h5 class="card-title">Mini Bus 20 Seat</h5>
+              <p class="card-text">Fleksibel untuk perjalanan singkat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card shadow-sm">
+            <img src="https://picsum.photos/400/200?random=8" class="card-img-top" alt="Bus">
+            <div class="card-body">
+              <h5 class="card-title">Elf & Hiace</h5>
+              <p class="card-text">Nyaman dan praktis untuk city tour.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Hubungi Kami</h2>
+      <p class="mb-4">Ingin pesan bus atau konsultasi kebutuhan perjalanan Anda? Hubungi kami sekarang juga.</p>
+      <a href="https://wa.me/6281234567890" class="btn btn-success btn-lg">Chat via WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Pusat Bus Holiday. Semua Hak Dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
